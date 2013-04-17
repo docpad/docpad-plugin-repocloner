@@ -1,38 +1,41 @@
 {
-	"name": "docpad-plugin-yourpluginname",
+	"name": "docpad-plugin-repocloner",
 	"version": "2.0.0",
-	"description": "DocPad plugin that adds the ability to render Something to Something Else",
-	"homepage": "https://github.com/yourgithubusername/docpad-plugin-yourpluginname",
+	"description": "DocPad plugin that clones out repos into your website",
+	"homepage": "http://docpad.org/plugin/repocloner",
 	"keywords": [
 		"docpad",
 		"docpad-plugin",
-		"something",
-		"somethingelse"
+		"repo", "repository", "git", "clone"
 	],
-	"author": "Copyright holders name <copyright holder's email> (copyright holder's website url)",
+	"author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
 	"maintainers": [
-		"Your name <your email> (your github url)"
+		"Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
 	],
 	"contributors": [
-		"Your name <your email> (your github url)"
+		"Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
 	],
 	"bugs": {
-		"url": "https://github.com/yourgithubusername/docpad-plugin-yourpluginname/issues"
+		"url": "https://github.com/docpad/docpad-plugin-repocloner/issues"
 	},
 	"repository" : {
 		"type": "git",
-		"url": "https://github.com/yourgithubusername/docpad-plugin-yourpluginname.git"
+		"url": "https://github.com/docpad/docpad-plugin-repocloner.git"
 	},
 	"engines" : {
-		"node": ">=0.8",
-		"docpad": ">=6"
+		"node": ">=0.4",
+		"docpad": ">=6.1 <7"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"extendr": "~2.0.1",
+		"bal-util": "~2.0.0",
+		"taskgroup": "~3.1.1"
+	},
 	"devDependencies": {
 		"coffee-script": "~1.6.2"
 	},
-	"main": "./out/yourpluginname.plugin.js",
+	"main": "./out/repocloner.plugin.js",
 	"scripts": {
-		"test": "node ./out/yourpluginname.test.js"
+		"test": "node ./out/repocloner.test.js"
 	}
 }
