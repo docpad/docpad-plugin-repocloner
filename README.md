@@ -26,11 +26,18 @@ Define the following inside your [docpad configuration file](http://docpad.org/d
 
 
 
-## History
-You can discover the history inside the `History.md` file
+## Deployment
+If you are wanting to generate your DocPad website on your hosting provider, rather than deploying a static site. You will have to install pygments on the host as well. You're probably better off using the [HighlightJS](http://docpad.org/plugin/highlightjs) plugin instead.
 
+
+## History
+[You can discover the history inside the `History.md` file](https://github.com/bevry/docpad-plugin-repocloner/blob/master/History.md#files)
+
+
+## Contributing
+[You can discover the contributing instructions inside the `Contributing.md` file](https://github.com/bevry/docpad-plugin-repocloner/blob/master/Contributing.md#files)
 
 
 ## License
 Licensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT License](http://creativecommons.org/licenses/MIT/)
-<br/>Copyright &copy; 2013+ [Bevry Pty Ltd](http://bevry.me)
+<br/>Copyright &copy; 2013+ [Bevry Pty Ltd](http://bevry.me) <us@bevry.me>

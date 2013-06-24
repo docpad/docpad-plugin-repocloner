@@ -3,7 +3,7 @@ module.exports = (BasePlugin) ->
 	# Import
 	{TaskGroup} = require('taskgroup')
 	extendr = require('extendr')
-	balUtil = require('bal-util')
+	safeps = require('safeps')
 	fsUtil = require('fs')
 
 	# Define Plugin
@@ -40,14 +40,13 @@ module.exports = (BasePlugin) ->
 
 				# Opts
 				_opts =
-					log: docpad.log
 					remote: 'origin'
 					branch: 'master'
 					output: true
 				extendr.extend(_opts,repoDetails)
 
 				# Init or Update
-				balUtil.initOrPullGitRepo _opts, (err) =>
+				safeps.initOrPullGitRepo _opts, (err) =>
 					# warn about errors, but don't let them kill execution
 					docpad.warn(err)  if err
 					docpad.log('info', "Updated #{repoDetails.name}")
