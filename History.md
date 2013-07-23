@@ -1,5 +1,8 @@
 ## History
 
+- v2.2.0 July 23, 2013
+	- Updated for DocPad v6.46
+
 - v2.1.0 June 24, 2013
 	- Dependency updates
 

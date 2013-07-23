@@ -16,7 +16,7 @@ module.exports = (BasePlugin) ->
 			repos: null
 
 		# Clone/Update our DocPad Documentation Repository
-		generateBefore: (opts,next) ->
+		populateCollectionsBefore: (opts,next) ->
 			# Prepare
 			docpad = @docpad
 			config = docpad.getConfig()
@@ -32,9 +32,6 @@ module.exports = (BasePlugin) ->
 					.replace(/^src/, config.srcPath)
 					.replace(/^out/, config.outPath)
 
-				# Check
-				return complete()  unless opts.reset is true or fsUtil.existsSync(repoDetails.path) is false
-
 				# Log
 				docpad.log('info', "Updating #{repoDetails.name}...")
 
@@ -43,14 +40,16 @@ module.exports = (BasePlugin) ->
 					remote: 'origin'
 					branch: 'master'
 					output: true
-				extendr.extend(_opts,repoDetails)
+				extendr.extend(_opts, repoDetails)
 
 				# Init or Update
 				safeps.initOrPullGitRepo _opts, (err) =>
 					# warn about errors, but don't let them kill execution
 					docpad.warn(err)  if err
+
+					# Update
 					docpad.log('info', "Updated #{repoDetails.name}")
-					complete()
+					return complete()
 
 			# Fire
 			tasks.run()
