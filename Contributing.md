@@ -7,7 +7,7 @@
 
 ## Bug reports
 
-[Post your bug report on the GitHub Issue Tracker for this project](https://github.com/docpad/docpad-plugin-pygments/issues)
+Post your bug reports on the GitHub Issue Tracker for this project
 
 
 ## Development

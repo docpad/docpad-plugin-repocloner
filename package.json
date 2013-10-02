@@ -1,6 +1,6 @@
 {
 	"name": "docpad-plugin-repocloner",
-	"version": "2.2.0",
+	"version": "2.2.1",
 	"description": "DocPad plugin that clones out repos into your website",
 	"homepage": "http://docpad.org/plugin/repocloner",
 	"keywords": [
@@ -25,13 +25,13 @@
 	"engines" : {
 		"node": ">=0.4"
 	},
-	"dependencies": {
-		"extendr": "~2.0.1",
-		"safeps": "~2.2.2",
-		"taskgroup": "~3.1.1"
-	},
 	"peerDependencies": {
 		"docpad": ">=6.46 <7"
+	},
+	"dependencies": {
+		"extendr": "~2.1.0",
+		"safeps": "~2.2.2",
+		"taskgroup": "~3.2.3"
 	},
 	"devDependencies": {
 		"coffee-script": "~1.6.2",
