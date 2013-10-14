@@ -38,7 +38,7 @@ module.exports = (BasePlugin) ->
 				# Opts
 				_opts =
 					remote: 'origin'
-					branch: 'master'
+					branch: repoDetails.branch or 'master'
 					output: true
 				extendr.extend(_opts, repoDetails)
 

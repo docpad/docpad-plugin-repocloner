@@ -27,6 +27,7 @@ Define the following inside your [docpad configuration file](http://docpad.org/d
 			repos: [
 				name: 'Plugin Wiki'
 				path: 'src/documents/wiki'
+				branch: 'development' //Optional. Defaults to 'master' if not specified.
 				url: 'https://github.com/docpad/docpad-plugin-repocloner.wiki.git'
 			]
 ```
