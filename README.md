@@ -19,7 +19,7 @@ docpad install repocloner
 
 ## Usage
 
-Define the following inside your [docpad configuration file](http://docpad.org/docs/config), changing the `repo` values to what you desire:
+Add the following inside your [DocPad configuration file](http://docpad.org/docs/config), changing the `repo` values to what you desire:
 
 ``` coffee
 	plugins:
@@ -27,8 +27,19 @@ Define the following inside your [docpad configuration file](http://docpad.org/d
 			repos: [
 				name: 'Plugin Wiki'
 				path: 'src/documents/wiki'
+				branch: 'master'
 				url: 'https://github.com/docpad/docpad-plugin-repocloner.wiki.git'
 			]
+```
+
+This will update the repository on each initial generation.
+
+If you would like to have repocloner update the repository during subsequent generations, you can do this via the [DocPad API](http://docpad.org/docs/api):
+
+``` coffee
+docpadInstance.action('generate', {populate:true, reload:true})
+# populate will cause this plugin to fire, as it emits the populateCollections events
+# reload will scan the file system for new files
 ```
 
 
