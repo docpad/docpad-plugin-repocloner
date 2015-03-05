@@ -20,7 +20,7 @@ module.exports = (BasePlugin) ->
 			# Prepare
 			docpad = @docpad
 			config = docpad.getConfig()
-			tasks = new TaskGroup().setConfig(concurrency:0).once 'complete', (next)
+			tasks = new TaskGroup().setConfig(concurrency:0).done (next)
 			repos = @config.repos or []
 
 			# Cycle through the repos assigning each repo value to @ so it works asynchronously
@@ -43,7 +43,7 @@ module.exports = (BasePlugin) ->
 				extendr.extend(_opts, repoDetails)
 
 				# Init or Update
-				safeps.initOrPullGitRepo _opts, (err) =>
+				safeps.initOrPullGitRepo _opts, (err) ->
 					# warn about errors, but don't let them kill execution
 					docpad.warn(err)  if err
 
