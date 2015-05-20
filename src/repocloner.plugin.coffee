@@ -25,8 +25,11 @@ module.exports = (BasePlugin) ->
 
 			# Cycle through the repos assigning each repo value to @ so it works asynchronously
 			repos.forEach (repoDetails) -> tasks.addTask (complete) ->
+				# rename path to cwd for safeps
+				repoDetails.cwd or= repoDetails.path
+				delete repoDetails.path
 				# Normalize path
-				repoDetails.path = repoDetails.path
+				repoDetails.cwd = repoDetails.cwd
 					.replace(/^src\/documents/, config.documentsPaths[0])
 					.replace(/^src\/files/, config.filesPaths[0])
 					.replace(/^src/, config.srcPath)
