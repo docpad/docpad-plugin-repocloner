@@ -25,10 +25,10 @@ Add the following inside your [DocPad configuration file](http://docpad.org/docs
 	plugins:
 		repocloner:
 			repos: [
-				name: 'Plugin Wiki'
-				path: 'src/documents/wiki'
+				name: 'Some Repository'
+				path: 'src/documents/some-repo'
 				branch: 'master'
-				url: 'https://github.com/docpad/docpad-plugin-repocloner.wiki.git'
+				url: 'https://github.com/some-org/some-repo.git'
 			]
 ```
 

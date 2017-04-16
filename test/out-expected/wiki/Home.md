@@ -1,1 +1,0 @@
-Welcome to the docpad-plugin-repocloner wiki!
