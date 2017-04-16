@@ -1,8 +1,10 @@
 # History
 
-## v2.3.0 Upcoming
-- Updated dependencies
+## v2.3.0 2017 April 16
+ Fixed checking out orphan branches
+  - Thanks to [Nathan Friedly](https://github.com/nfriedly) for his help on [issue #6](https://github.comdocpad/docpad-plugin-repocloner/issues/6) and [pull request #7](https://github.comdocpad/docpad-plugin-repocloner/pull/7)
 - Default `name` to `url`
+- Updated dependencies
 - Bumped minimum node version from 0.4 to 0.12 to comply with node ecosystem
 
 ## v2.2.1 2013 October 2

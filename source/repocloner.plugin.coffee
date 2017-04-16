@@ -44,7 +44,7 @@ module.exports = (BasePlugin) ->
 				extendr.extend(_opts, repoDetails)
 
 				# Init or Update
-				safeps.initOrPullGitRepo _opts, (err) ->
+				safeps.initGitRepo _opts, (err) ->
 					# warn about errors, but don't let them kill execution
 					docpad.warn(err)  if err
 

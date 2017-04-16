@@ -1,6 +1,6 @@
 {
   "name": "docpad-plugin-repocloner",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "description": "DocPad plugin that clones out repos into your website",
   "homepage": "https://github.com/docpad/docpad-plugin-repocloner",
   "license": "MIT",
@@ -43,10 +43,12 @@
   },
   "author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
   "maintainers": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+    "Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
   ],
   "contributors": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+    "Benjamin Lupton <b@lupton.cc> (http://balupton.com)",
+    "Rob Loach <robloach@gmail.com> (http://robloach.net)",
+    "vsopvsop (https://github.com/vsopvsop)"
   ],
   "bugs": {
     "url": "https://github.com/docpad/docpad-plugin-repocloner/issues"
@@ -82,7 +84,7 @@
   "main": "es5/repocloner.plugin.js",
   "dependencies": {
     "extendr": "^3.2.2",
-    "safeps": "^6.3.0",
+    "safeps": "^7.0.1",
     "taskgroup": "^5.0.1"
   },
   "devDependencies": {
