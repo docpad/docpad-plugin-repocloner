@@ -28,10 +28,10 @@ module.exports = (BasePlugin) ->
 				# Normalize path
 				repoDetails.name or= repoDetails.url
 				repoDetails.path = repoDetails.path
-					.replace(/^src\/documents/, config.documentsPaths[0])
-					.replace(/^src\/files/, config.filesPaths[0])
-					.replace(/^src/, config.srcPath)
-					.replace(/^out/, config.outPath)
+					.replace(/^src\/documents/, docpad.getPath('document'))
+					.replace(/^src\/files/, docpad.getPath('file'))
+					.replace(/^src/, docpad.getPath('source'))
+					.replace(/^out/, docpad.getPath('out'))
 
 				# Log
 				docpad.log('info', "Updating #{repoDetails.name}...")
