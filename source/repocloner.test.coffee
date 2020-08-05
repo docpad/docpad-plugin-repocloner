@@ -1,12 +1,8 @@
+'use strict'
+
 # Test our plugin using DocPad's Testers
-require('docpad').require('testers')
+module.exports = require('docpad-plugintester')
 	# ensure initial clone works
-	.test({
-		pluginPath: __dirname+'/..'
-		testerClass: 'RendererTester'
-	})
+	.test()
 	# ensure that a rerun works
-	.test({
-		pluginPath: __dirname+'/..'
-		testerClass: 'RendererTester'
-	})
+	.test()
