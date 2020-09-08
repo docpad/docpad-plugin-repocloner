@@ -58,6 +58,9 @@ docpadInstance.action('generate', {populate:true, reload:true})
 # reload will scan the file system for new files
 ```
 
+
+
+
 <!-- INSTALL/ -->
 
 <h2>Install</h2>
