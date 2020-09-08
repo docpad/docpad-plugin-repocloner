@@ -1,7 +1,7 @@
 {
   "title": "Repository Cloner Plugin for DocPad",
   "name": "docpad-plugin-repocloner",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "description": "Clone or update repositories into your DocPad website before generation",
   "homepage": "https://github.com/docpad/docpad-plugin-repocloner",
   "license": "MIT",
