@@ -1,7 +1,7 @@
 {
   "title": "Repository Cloner Plugin for DocPad",
   "name": "docpad-plugin-repocloner",
-  "version": "2.7.0",
+  "version": "2.8.0",
   "description": "Clone or update repositories into your DocPad website before generation",
   "homepage": "https://github.com/docpad/docpad-plugin-repocloner",
   "license": "MIT",
@@ -94,7 +94,7 @@
         "require"
       ],
       "engines": {
-        "node": "10 || 12 || 13 || 14"
+        "node": "10 || 12 || 14 || 15"
       }
     }
   ],
@@ -102,18 +102,18 @@
   "main": "edition-esnext/index.js",
   "dependencies": {
     "docpad-baseplugin": "^1.4.0",
-    "extendr": "^5.15.0",
-    "safeps": "^10.14.0",
-    "taskgroup": "^7.16.0"
+    "extendr": "^5.16.0",
+    "safeps": "^10.15.0",
+    "taskgroup": "^7.17.0"
   },
   "devDependencies": {
-    "@bevry/update-contributors": "^1.17.0",
+    "@bevry/update-contributors": "^1.18.0",
     "coffeelint": "^2.1.0",
     "coffeescript": "^2.5.1",
     "docpad": "^6.83.2",
     "docpad-plugintester": "^1.7.3",
-    "projectz": "^2.16.0",
-    "valid-directory": "^3.4.0"
+    "projectz": "^2.17.0",
+    "valid-directory": "^3.5.0"
   },
   "peerDependencies": {
     "docpad": "^6.83.2"
